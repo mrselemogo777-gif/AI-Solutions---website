@@ -1,0 +1,364 @@
+/* Earth Tone Theme for AI-Solutions Ltd */
+:root {
+    --primary: #8B7355;    /* warm brown */
+    --secondary: #6B4F3F;  /* dark brown */
+    --accent: #A58E7C;     /* light brown */
+    --light: #F5F0E8;      /* beige background */
+    --dark: #3E2E23;       /* deep brown */
+    --success: #8BA88B;    /* muted green */
+    --warning: #D9A066;    /* warm orange */
+    --danger: #C45E5E;     /* muted red */
+    --gray: #C0B6A8;       /* warm gray */
+    --white: #FFFCF8;       /* off-white */
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F5F0E8;  /* beige background */
+    background-image: url('https://www.transparenttextures.com/transparent/45/dark-geometric.png'); /* subtle texture */
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #3E2E23;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    background: #8B7355;  /* solid warm brown */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FFFCF8 !important;
+}
+
+.nav-link {
+    color: #FFFCF8 !important;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #F5F0E8 !important;
+}
+
+/* Cards */
+.service-card {
+    background: #FFFCF8;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+    border: 1px solid #E8E0D5;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    color: #6B4F3F;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+/* Testimonials */
+.testimonial {
+    background: #FFFCF8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    transition: transform 0.3s;
+    height: 100%;
+    border: 1px solid #E8E0D5;
+}
+
+.testimonial:hover {
+    transform: translateY(-3px);
+}
+
+.rating {
+    color: #D9A066;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+}
+
+.rating span {
+    margin-right: 2px;
+}
+
+.testimonial p {
+    font-style: italic;
+    color: #4A3F35;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: #3E2E23;
+    margin-top: 1rem;
+}
+
+.testimonial-company {
+    color: #7F6E5D;
+    font-size: 0.9rem;
+}
+
+/* Events */
+.event-card {
+    background: #FFFCF8;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+    border-left: 5px solid #8B7355;
+    transition: transform 0.3s;
+    height: 100%;
+}
+
+.event-card:hover {
+    transform: translateX(5px);
+}
+
+.event-date {
+    color: #8B7355;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.event-card h4 {
+    margin-bottom: 0.75rem;
+    color: #3E2E23;
+}
+
+.event-card p {
+    color: #5A4C3E;
+    line-height: 1.6;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #3E2E23;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #E8E0D5;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #FFFCF8;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #8B7355;
+}
+
+.btn {
+    background: #8B7355;
+    color: #FFFCF8;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn:hover {
+    background: #6B4F3F;
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: #8B7355;
+}
+
+/* Tables (admin) */
+.table {
+    background: #FFFCF8;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid #E8E0D5;
+}
+
+.table thead th {
+    background: #8B7355;
+    color: #FFFCF8;
+    font-weight: 600;
+    border: none;
+    padding: 1rem;
+}
+
+.table td {
+    padding: 1rem;
+    vertical-align: middle;
+    border-color: #E8E0D5;
+    background: #FFFCF8;
+}
+
+/* Alerts */
+.alert-success {
+    background: #E8F0E8;
+    color: #2F4F2F;
+    border: 1px solid #C0D6C0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.alert-error {
+    background: #FCE8E8;
+    color: #7A3B3B;
+    border: 1px solid #F0C0C0;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Gallery */
+.gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    border: 3px solid #FFFCF8;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+    background: #8B7355;
+    color: #FFFCF8;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 4px solid #6B4F3F;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #3E2E23;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #3E2E23;
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.2rem;
+    color: #6B5A4A;
+    margin-bottom: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .service-card, .testimonial, .event-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* ===== Always visible buttons & navigation ===== */
+/* Page transition buttons (prev/next) */
+.page-nav-buttons {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.page-nav-buttons a {
+    background-color: #8B7355;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    text-align: center;
+}
+.page-nav-buttons a:hover {
+    background-color: #6B4F3F;
+}
+/* Ensure all buttons have visible text and proper contrast */
+.btn,
+button,
+a.btn,
+input[type="submit"],
+input[type="button"] {
+    background-color: #8B7355;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    display: inline-block;
+    text-align: center;
+}
+.btn:hover,
+button:hover,
+a.btn:hover,
+input[type="submit"]:hover {
+    background-color: #6B4F3F;
+}
+.btn-outline-primary {
+    background-color: transparent;
+    border: 2px solid #8B7355;
+    color: #8B7355;
+}
+.btn-outline-primary:hover {
+    background-color: #8B7355;
+    color: white;
+}
+/* Remove any hover-only text visibility issues */
+.card-footer .btn,
+.event-card .btn,
+.testimonial .btn,
+.service-card .btn {
+    opacity: 1;
+    visibility: visible;
+}
